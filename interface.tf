@@ -13,6 +13,6 @@ resource "azurerm_network_interface" "mynics" {
     subnet_id                     = "${azurerm_subnet.mysubnet5.id}"
     private_ip_address_allocation = "dynamic"
     #public_ip_address_id          = "${azurerm_public_ip.mypips}"
-    public_ip_address_id          = "${azurerm_public_ip.mypips[count.index+1]}"
+    public_ip_address_id          = "${azurerm_public_ip.mypips.id[index]}"
     }
 }
