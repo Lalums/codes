@@ -2,9 +2,9 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "cloud-shell-storage-centralindia"
-    storage_account_name = "statefilestoaccount"
-    container_name       = "statefile"
+    storage_account_name = "teststroioi"
+    container_name       = "dfjskdhf"
     key                  = "statefile.terraform.tfstate"
-    access_key           = "yPVOcp31g4fHS+q9EmfUdB/rC3bCxopskxFNLPi5Z597/MSMD6gJocSGL9v1zAWRl2Du/kg/mRdZ5monGo+K+w=="
+    access_key           = "NcSkZw+4za9VosB7N8giOR43ZLo8O3Vc64kTMeH61xusJyKtA9Fg5xSpc6Y4onqGL0zUtIIlidBwERxqgHZiAg=="
   }
 }
