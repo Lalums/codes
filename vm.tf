@@ -10,7 +10,7 @@ resource "azurerm_virtual_machine" "myDNS1vm" {
   location              = var.resource_location
   resource_group_name   = azurerm_resource_group.myresourcegroup.name
   network_interface_ids = azurerm_network_interface.mynics.*.id
-  vm_size               = "Standard_D2s_v3"
+  vm_size               = "Standard_B1s"
   #availability_set_id = "${azurerm_availability_set.avset.id}"
   delete_os_disk_on_termination = true
 
@@ -24,7 +24,7 @@ resource "azurerm_virtual_machine" "myDNS1vm" {
   storage_image_reference {
     publisher = "MicrosoftWindowsServer"
     offer     = "WindowsServer"
-    sku       = "2016-Datacenter"
+    sku       = "2012-R2-Datacenter"
     version   = "latest"
   }
 
