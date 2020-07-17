@@ -23,12 +23,12 @@ variable "vmpassword" {
 }
 
 variable "prefix" {
-  default = "jpa"
+  default = "jpanew"
 }
 
 variable "keyvaultnames" {
     type    = list
-    default = ["jpakv1", "jpakv2", "jpakv3"]
+    default = ["jpakv4", "jpakv5", "jpakv6"]
 }
 
 variable "vmnics" {
